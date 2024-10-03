@@ -15,7 +15,7 @@ vim.api.nvim_create_autocmd({'BufReadPre','FileReadPre'}, {
 		-- get file path
 		local path = vim.fn.expand('%:p')
 		-- If zephyr in path, set zephyr style
-		if string.match(path, 'zephyr') then
+		if string.match(path, 'zephyr') or string.match(path, 'gpmcu') then
 			vim.opt.expandtab = true
 			vim.opt.shiftwidth = 8
 			vim.opt.tabstop = 8

@@ -16,6 +16,11 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'github/copilot.vim'
 Plug 'ntpeters/vim-better-whitespace'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-commentary'
+Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
+Plug 'preservim/tagbar'
+Plug 'kkoomen/vim-doge', { 'do': ':call doge#install()' }
 
 call plug#end()
 
@@ -26,6 +31,7 @@ source $XDG_CONFIG_HOME/nvim/setup-project.lua
 source $XDG_CONFIG_HOME/nvim/setup-telescope.lua
 source $XDG_CONFIG_HOME/nvim/setup-git.lua
 source $XDG_CONFIG_HOME/nvim/setup-misc.lua
+source $XDG_CONFIG_HOME/nvim/setup-treesitter.lua
 
 source $XDG_CONFIG_HOME/nvim/setup-codestyle.lua
 
