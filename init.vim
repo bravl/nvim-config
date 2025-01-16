@@ -16,11 +16,14 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'github/copilot.vim'
 Plug 'ntpeters/vim-better-whitespace'
-Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-commentary'
 Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
 Plug 'preservim/tagbar'
 Plug 'kkoomen/vim-doge', { 'do': ':call doge#install()' }
+Plug 'fraso-dev/nvim-listchars'
+Plug 'cuducos/yaml.nvim'
+Plug 'lewis6991/gitsigns.nvim'
+Plug 'sakhnik/nvim-gdb'
 
 call plug#end()
 
@@ -48,3 +51,4 @@ let g:airline_powerline_fonts = 1
 " Enable line numbers
 set number
 set relativenumber
+ListcharsEnable

@@ -1,3 +1,5 @@
+require('gitsigns').setup()
+
 -- vim-fugitive
 vim.keymap.set('n', '<leader>gg', ":Git<CR>", {})
 vim.keymap.set('n', '<leader>gc', ":Git commit -sv<CR>", {})
