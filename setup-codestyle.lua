@@ -55,3 +55,36 @@ vim.api.nvim_create_autocmd({'BufReadPre','FileReadPre'}, {
         vim.opt.tabstop = 2
     end,
 })
+
+-- dts settings
+vim.api.nvim_create_autocmd({'BufReadPre','FileReadPre'}, {
+	group = vim.api.nvim_create_augroup('setup_dts_codestyle', { clear = true }),
+	pattern = {'*.dts', '*.dtsi'},
+	callback = function()
+		vim.opt.expandtab = false
+		vim.opt.shiftwidth = 4
+		vim.opt.tabstop = 4
+	end,
+})
+
+-- bitbake files
+vim.api.nvim_create_autocmd({'BufReadPre','FileReadPre'}, {
+	group = vim.api.nvim_create_augroup('setup_bitbake_codestyle', { clear = true }),
+	pattern = {'*.bb', '*.bbappend', '*.conf'},
+	callback = function()
+		vim.opt.expandtab = true
+		vim.opt.shiftwidth = 4
+		vim.opt.tabstop = 4
+	end,
+})
+
+-- python files
+vim.api.nvim_create_autocmd({'BufReadPre','FileReadPre'}, {
+	group = vim.api.nvim_create_augroup('setup_python_codestyle', { clear = true }),
+	pattern = {'*.py'},
+	callback = function()
+		vim.opt.expandtab = true
+		vim.opt.shiftwidth = 4
+		vim.opt.tabstop = 4
+	end,
+})

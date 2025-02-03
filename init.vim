@@ -3,12 +3,10 @@ call plug#begin()
 Plug 'nvim-tree/nvim-tree.lua'
 Plug 'fatih/vim-go',
 Plug 'nvim-tree/nvim-web-devicons'
-Plug 'neoclide/coc.nvim',
-Plug 'preservim/nerdtree',
+Plug 'neoclide/coc.nvim', { 'do': ':CocInstall coc-clangd coc-go coc-git coc-yank coc-lua' }
 Plug 'tpope/vim-fugitive',
 Plug 'nvim-lua/plenary.nvim',
 Plug 'nvim-telescope/telescope.nvim',
-Plug 'nvim-tree/nvim-web-devicons',
 Plug 'pwntester/octo.nvim',
 Plug 'savq/melange-nvim',
 Plug 'ahmedkhalf/project.nvim'
@@ -22,8 +20,6 @@ Plug 'preservim/tagbar'
 Plug 'kkoomen/vim-doge', { 'do': ':call doge#install()' }
 Plug 'fraso-dev/nvim-listchars'
 Plug 'cuducos/yaml.nvim'
-Plug 'lewis6991/gitsigns.nvim'
-Plug 'sakhnik/nvim-gdb'
 
 call plug#end()
 
