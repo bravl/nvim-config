@@ -20,6 +20,9 @@ Plug 'preservim/tagbar'
 Plug 'kkoomen/vim-doge', { 'do': ':call doge#install()' }
 Plug 'fraso-dev/nvim-listchars'
 Plug 'cuducos/yaml.nvim'
+Plug 'sainnhe/sonokai'
+Plug 'azabiong/vim-highlighter'
+Plug 'cpea2506/one_monokai.nvim'
 
 call plug#end()
 
@@ -31,15 +34,16 @@ source $XDG_CONFIG_HOME/nvim/setup-telescope.lua
 source $XDG_CONFIG_HOME/nvim/setup-git.lua
 source $XDG_CONFIG_HOME/nvim/setup-misc.lua
 source $XDG_CONFIG_HOME/nvim/setup-treesitter.lua
+source $XDG_CONFIG_HOME/nvim/setup-nvim-tree.lua
 
 source $XDG_CONFIG_HOME/nvim/setup-codestyle.lua
 
 set syntax
 
 " Setup theme
-set background=dark
+" set background=dark
 set termguicolors
-colorscheme melange
+colorscheme one_monokai
 
 " Enable powerline fonts
 let g:airline_powerline_fonts = 1
